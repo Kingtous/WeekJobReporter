@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.main.activity.MainActivity"
+    android:background="@color/app_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_topbar"/>
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/qmui_config_color_white"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/p4"
+            android:layout_marginLeft="@dimen/p4"
+            android:layout_marginRight="@dimen/p4"
+            app:qmui_radius="@dimen/p1"
+            app:qmui_borderColor="@color/qmui_config_color_white">
+
+            <EditText
+                android:layout_margin="@dimen/p2"
+                android:gravity="left|start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_name"
+                android:hint="姓名..."
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_background"
+                />
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p4"
+            app:qmui_radius="@dimen/p1"
+            app:qmui_borderColor="@color/qmui_config_color_white">
+
+            <EditText
+                android:layout_margin="@dimen/p2"
+                android:gravity="left|start"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/edit_former"
+                android:hint="上周计划..."
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_background"
+                />
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p4"
+            app:qmui_radius="@dimen/p1"
+            app:qmui_borderColor="@color/qmui_config_color_white">
+
+            <EditText
+                android:layout_margin="@dimen/p2"
+                android:gravity="left|start"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/edit_complete"
+                android:hint="本周已完成..."
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_background"
+                />
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p4"
+            app:qmui_radius="@dimen/p1"
+            app:qmui_borderColor="@color/qmui_config_color_white">
+
+            <EditText
+                android:layout_margin="@dimen/p2"
+                android:gravity="left|start"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/edit_later"
+                android:hint="下周计划..."
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_background"
+                />
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+
+
+</com.qmuiteam.qmui.layout.QMUILinearLayout>
